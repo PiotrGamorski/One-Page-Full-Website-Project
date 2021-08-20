@@ -161,6 +161,11 @@ p {
   margin: 10px 5%;
   position: relative;
   z-index: 1;
+  box-shadow: 0px 0px 28px 0px #0000002c;
+  transition: 0.3s ease;
+}
+#services .service-item:hover {
+  box-shadow: 0px 0px 10px 0px #0000002c;
 }
 #services .service-item::after {
   content: "";
@@ -327,13 +332,14 @@ p {
   margin: 0 auto;
 }
 #contact .contact-items {
-  width: 100%;
+  width: 400px;
 }
 #contact .contact-items .contact-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   background-color: white;
   border-radius: 10px;
   max-width: 1200px;
@@ -341,7 +347,10 @@ p {
   padding: 30px;
   width: 75%;
   box-shadow: 0px 0px 18px 0px #0000002c;
-  text-align: center;
+  transition: 0.3s ease;
+}
+#contact .contact-items .contact-item:hover{
+  box-shadow: 0px 0px 5px 0px #0000002c;
 }
 #contact .icon {
   width: 70px;
@@ -353,6 +362,11 @@ p {
   font-size: 2.5rem;
   font-weight: 500;
   margin-bottom: 10px;
+}
+#contact .contact-info h2{
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-weight: 500;
 }
 
 /* End of Contact Section */
