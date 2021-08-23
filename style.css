@@ -368,8 +368,56 @@ p {
   line-height: 2rem;
   font-weight: 500;
 }
-
 /* End of Contact Section */
+
+/* Footer Section */
+#footer{
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+#footer .footer{
+  flex-direction: column;
+  min-height: 260px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+#footer .brand h1{
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+#footer .footer h2{
+  color: white;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#footer .social-icons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+#footer .social-icons .social-item{
+  height: 50px;
+  width: 50px;
+  margin: 0 5px;
+}
+#footer .social-icons .social-item img{
+  filter: grayscale(1);
+  transition: 0.3s ease filter;
+}
+#footer .social-icons .social-item img:hover{
+  filter: grayscale(0);
+}
+#footer .footer p{
+  color: white;
+  font-size: 1.3rem;
+}
+/* End of Footer Section */
 
 /* Keyframes */
 @keyframes text_reveal_box {
