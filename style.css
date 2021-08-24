@@ -60,6 +60,65 @@ p {
   color: white;
   background-color: crimson;
 }
+/* Header Section */
+#header{
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100vw;
+}
+#header .header{
+  min-height: 8vh;
+  background-color: rgba(31, 30, 30, 0.24);
+}
+#header .header .nav-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 10px;
+}
+#header .brand h1{
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+#header .brand span{
+  color: crimson;
+}
+#header .brand a{
+  text-decoration: none;
+}
+#header .nav-list ul{
+list-style: none;
+position: absolute;
+background-color: rgb(31, 30, 30);
+left: 0;
+top: 0;
+width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+z-index: 1;
+overflow-x: hidden;
+}
+#header .nav-list ul a {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  display: block;
+}
+/* End of Header Section */
+
 /* Hero Section */
 #hero {
   background-image: url(./img/hero-bg.png);
