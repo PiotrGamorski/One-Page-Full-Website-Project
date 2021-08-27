@@ -97,7 +97,7 @@ p {
 list-style: none;
 position: absolute;
 background-color: rgb(31, 30, 30);
-left: 0;
+left: 100%;
 top: 0;
 width: 100vw;
 height: 100vh;
@@ -107,6 +107,7 @@ align-items: center;
 justify-content: center;
 z-index: 1;
 overflow-x: hidden;
+transition: 0.5s ease left;
 }
 #header .nav-list ul a {
   font-size: 2.5rem;
@@ -150,7 +151,18 @@ display: inline-block;
 border: 3px solid white;
 border-radius: 50%;
 cursor: pointer;
-margin: 0 20px;
+margin-right: 20px;
+transform: scale(0.8);
+}
+#header .hamburger::after{
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 10px solid white;
 }
 #header .hamburger .bar{
   height: 2px;
@@ -161,6 +173,7 @@ margin: 0 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 25%;
 }
 #header .hamburger .bar::after,
 #header .hamburger .bar::before{
@@ -171,11 +184,19 @@ margin: 0 20px;
   left: 0;
   background-color: white;
   transition: 0.3s ease;
-  transition-property: top, bottom;
-  top: 8px;
+  transition-property: top;
+  top: 6px;
+  border-radius: 25%;
 }
 #header .hamburger .bar::after{
-  top: -8px
+  top: -6px;
+}
+#header .hamburger.active .bar::before,
+#header .hamburger.active .bar::after{
+  top: 0;
+}
+#header .nav-list ul.active{
+  left: 0%;
 }
 /* End of Header Section */
 
